@@ -1,0 +1,375 @@
+"use client"
+
+import Link from "next/link"
+import { ArrowRight, Copy, Check, Download, Share2 } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { useState } from "react"
+
+function CopyLinkButton() {
+  const [copied, setCopied] = useState(false);
+  const link = 'https://landing.tnexfinance.com.vn/TnexDirectSale?sale_id=CTV1679';
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(link);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+  };
+
+  return (
+    <Button 
+      size="sm" 
+      className="bg-blue-600 hover:bg-blue-700 text-white whitespace-nowrap"
+      onClick={handleCopy}
+    >
+      {copied ? (
+        <>
+          <Check className="w-4 h-4 mr-1" />
+          Đã copy!
+        </>
+      ) : (
+        <>
+          <Copy className="w-4 h-4 mr-1" />
+          Copy
+        </>
+      )}
+    </Button>
+  );
+}
+
+function QRDownloadButton() {
+  const [downloaded, setDownloaded] = useState(false);
+
+  const handleDownload = async () => {
+    try {
+      const response = await fetch('/qr-code-customer.png');
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.style.display = 'none';
+      a.href = url;
+      a.download = 'QR-Code-Tnex-CTV1679.png';
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+      
+      setDownloaded(true);
+      setTimeout(() => setDownloaded(false), 2000);
+    } catch (err) {
+      console.error('Failed to download: ', err);
+    }
+  };
+
+  const handleShare = async () => {
+    try {
+      const link = 'https://landing.tnexfinance.com.vn/TnexDirectSale?sale_id=CTV1679';
+      if (navigator.share) {
+        await navigator.share({
+          title: 'QR Code đăng ký Tnex',
+          text: 'Quét mã QR để đăng ký vay tiêu dùng Tnex',
+          url: link
+        });
+      } else {
+        await navigator.clipboard.writeText(link);
+        alert('Link đã được copy vào clipboard!');
+      }
+    } catch (err) {
+      console.error('Failed to share: ', err);
+    }
+  };
+
+  return (
+    <div className="flex gap-2 mt-3">
+      <Button 
+        size="sm" 
+        variant="outline"
+        className="bg-white hover:bg-blue-50 border-blue-300 text-blue-600 hover:text-blue-700"
+        onClick={handleDownload}
+      >
+        {downloaded ? (
+          <>
+            <Check className="w-3 h-3 mr-1" />
+            Đã tải!
+          </>
+        ) : (
+          <>
+            <Download className="w-3 h-3 mr-1" />
+            Tải QR
+          </>
+        )}
+      </Button>
+      <Button 
+        size="sm" 
+        variant="outline"
+        className="bg-white hover:bg-green-50 border-green-300 text-green-600 hover:text-green-700"
+        onClick={handleShare}
+      >
+        <Share2 className="w-3 h-3 mr-1" />
+        Chia sẻ
+      </Button>
+    </div>
+  );
+}
+
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-gradient-to-b from-background to-slate-50">
+      {/* Header */}
+      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-lg">T</span>
+            </div>
+            <span className="font-bold text-xl text-slate-900">Dự án Tnext TSA 100%</span>
+          </div>
+          <Button className="bg-blue-600 hover:bg-blue-700 text-white">Đăng ký ngay</Button>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <section className="max-w-6xl mx-auto px-4 py-12 md:py-20">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="space-y-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+              <span className="text-blue-600">Dự án Tnext TSA 100%</span> - Tuyển dụng Cộng tác viên
+            </h1>
+            <p className="text-lg text-slate-600 leading-relaxed">
+              Tham gia dự án Tnext TSA 100% - Cơ hội tuyển dụng cộng tác viên với hoa hồng cao 2%. Hướng dẫn đăng ký CTV chi tiết và đơn giản. Bắt đầu kiếm tiền ngay hôm nay!
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white w-full sm:w-auto">
+                Bắt đầu ngay <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-slate-300 text-slate-700 w-full sm:w-auto bg-transparent"
+              >
+                Tìm hiểu thêm
+              </Button>
+            </div>
+          </div>
+          <div className="relative">
+            <div className="bg-gradient-to-br from-blue-50 to-slate-100 rounded-2xl p-8 border border-blue-200">
+              <img src="/mobile-app-vay-ti-n-tnex.jpg" alt="Tnex App" className="w-full rounded-xl shadow-lg" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="bg-white py-16 md:py-24">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Các điểm mạnh của dự án</h2>
+            <p className="text-lg text-slate-600">Những ưu điểm vượt trội của dự án Tnext TSA 100%</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Feature 1 */}
+            <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8 border border-blue-200 hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">💰</span>
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Hoa hồng 2%, trả ngay</h3>
+              <p className="text-slate-600">
+                Hoa hồng 2%, trả ngay sau khi hồ sơ giải ngân. Thu nhập nhanh chóng và đáng tin cậy.
+              </p>
+            </div>
+
+            {/* Feature 2 */}
+            <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8 border border-blue-200 hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">📲</span>
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Theo dõi trực tiếp</h3>
+              <p className="text-slate-600">
+                Theo dõi & push hồ sơ trực tiếp, không qua bên thứ 3. Kiểm soát toàn bộ quy trình.
+              </p>
+            </div>
+
+            {/* Feature 3 */}
+            <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8 border border-blue-200 hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">⚡</span>
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Duyệt nhanh 15 phút</h3>
+              <p className="text-slate-600">Duyệt hồ sơ tự động, chỉ cần CCCD - 15p là có kết quả phê duyệt. Nhanh chóng và tiện lợi.</p>
+            </div>
+
+            {/* Feature 4 */}
+            <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8 border border-blue-200 hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">🔒</span>
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Code nội bộ an toàn</h3>
+              <p className="text-slate-600">
+                Chạy code nội bộ, nên không ảnh hưởng đến code chính thống. Nợ xấu cũng mở được code.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How to Register Section */}
+      <section className="py-16 md:py-24 bg-gradient-to-b from-slate-50 to-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Hướng dẫn đăng ký cộng tác viên</h2>
+            <p className="text-lg text-slate-600">Quy trình đăng ký CTV và hướng dẫn lên hồ sơ cho khách hàng</p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Part 1: Registration Guide */}
+            <div className="bg-white rounded-2xl p-8 border border-slate-200">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                  <span className="text-2xl">📝</span>
+                </div>
+                <h3 className="text-2xl font-bold text-slate-900">1. Hướng dẫn đăng ký và theo dõi hồ sơ</h3>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+                  <h4 className="font-bold text-slate-900 mb-3 flex items-center gap-2">
+                    <span className="text-blue-600">📱</span>
+                    Zalo đăng ký chạy và tạo code
+                  </h4>
+                  <p className="text-slate-600 mb-3">Liên hệ Zalo để đăng ký làm CTV và nhận mã cộng tác viên:</p>
+                  <div className="bg-white rounded-lg p-4 border border-blue-300">
+                    <a 
+                      href="https://zalo.me/0888979809" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-lg font-bold text-blue-600 hover:text-blue-700 transition-colors"
+                    >
+                      <span className="text-xl">📞</span>
+                      <span>Zalo: 0888 979 809</span>
+                      <ArrowRight className="w-4 h-4" />
+                    </a>
+                  </div>
+                </div>
+
+                <div className="bg-green-50 rounded-lg p-6 border border-green-200">
+                  <h4 className="font-bold text-slate-900 mb-3 flex items-center gap-2">
+                    <span className="text-green-600">👥</span>
+                    Group Zalo theo dõi doanh số
+                  </h4>
+                  <p className="text-slate-600 mb-3">Tham gia group để theo dõi doanh số và cập nhật thông tin:</p>
+                  <div className="bg-white rounded-lg p-4 border border-green-300">
+                    <p className="text-sm text-slate-500 italic">(Link group sẽ được cập nhật sau)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Part 2: Customer Guide */}
+            <div className="bg-white rounded-2xl p-8 border border-slate-200">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">
+                  <span className="text-2xl">👥</span>
+                </div>
+                <h3 className="text-2xl font-bold text-slate-900">2. Hướng dẫn lên hồ sơ cho khách hàng</h3>
+              </div>
+              
+              <div className="space-y-6">
+                {/* Option A: Copy Link */}
+                <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-lg p-6 border border-blue-200">
+                  <h4 className="font-bold text-slate-900 mb-3 flex items-center gap-2">
+                    <span className="text-blue-600">🔗</span>
+                    A. Gửi link cho khách hàng
+                  </h4>
+                  <p className="text-slate-600 mb-4">Copy và gửi link này cho khách hàng để họ đăng ký:</p>
+                  
+                  <div className="bg-white rounded-lg p-4 border border-slate-300 mb-4">
+                    <div className="flex items-center justify-between gap-2">
+                      <code className="text-sm text-slate-700 flex-1 break-all">
+                        https://landing.tnexfinance.com.vn/TnexDirectSale?sale_id=CTV1679
+                      </code>
+                      <CopyLinkButton />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Option B: QR Code */}
+                <div className="bg-gradient-to-br from-green-50 to-slate-50 rounded-lg p-6 border border-green-200">
+                  <h4 className="font-bold text-slate-900 mb-3 flex items-center gap-2">
+                    <span className="text-green-600">📱</span>
+                    B. Hoặc gửi mã QR cho khách
+                  </h4>
+                  <p className="text-slate-600 mb-4">Gửi mã QR này cho khách hàng để họ quét và truy cập trang đăng ký:</p>
+                  
+                  <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg p-8 border border-green-300 flex flex-col items-center text-white">
+                    <h5 className="text-lg font-bold mb-2">QR tra cứu thông tin</h5>
+                    <p className="text-blue-100 text-sm mb-4">Đưa mã này cho khách hàng</p>
+                    <div className="bg-white rounded-lg p-4 mb-3">
+                      <img src="/qr-code-customer.png" alt="QR Code tra cứu thông tin cho khách hàng" className="w-40 h-40" />
+                    </div>
+                    <p className="text-blue-100 text-xs text-center mb-3">Mã QR tra cứu thông tin dành cho khách hàng</p>
+                    <p className="text-blue-200 text-xs text-center mb-2">Mã CTV: CTV1679</p>
+                    <QRDownloadButton />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="bg-gradient-to-r from-blue-600 to-blue-700 py-16 md:py-20">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Sẵn sàng trở thành CTV?</h2>
+          <p className="text-lg text-blue-100 mb-8">
+            Đăng ký ngay để tham gia dự án Tnext TSA 100% và bắt đầu kiếm hoa hồng 2%.
+          </p>
+          <Button size="lg" className="bg-white text-blue-600 hover:bg-slate-100">
+            Đăng ký CTV ngay <ArrowRight className="ml-2 w-4 h-4" />
+          </Button>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-slate-900 text-slate-300 py-12">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold">T</span>
+                </div>
+                <span className="font-bold text-white">Dự án Tnext TSA 100%</span>
+              </div>
+              <p className="text-sm">Dự án tuyển dụng cộng tác viên với hoa hồng cao và hỗ trợ chuyên nghiệp.</p>
+            </div>
+            <div>
+              <h4 className="font-bold text-white mb-4">Liên hệ</h4>
+              <a 
+                href="https://zalo.me/0888979809" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-sm text-slate-300 hover:text-white transition-colors"
+              >
+                📞 Zalo: 0888 979 809
+              </a>
+              <p className="text-sm mt-2">Hỗ trợ 24/7 cho cộng tác viên</p>
+            </div>
+            <div>
+              <h4 className="font-bold text-white mb-4">Thông tin</h4>
+              <p className="text-sm">Dự án Tnext TSA 100%</p>
+              <p className="text-sm mt-2">Tuyển dụng CTV - Hoa hồng 2%</p>
+            </div>
+          </div>
+          <div className="border-t border-slate-700 pt-8 text-center text-sm">
+            <p>&copy; 2025 Dự án Tnext TSA 100%. Tất cả quyền được bảo lưu.</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  )
+}
