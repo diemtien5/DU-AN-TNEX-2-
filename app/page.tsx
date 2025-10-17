@@ -133,12 +133,12 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="max-w-6xl mx-auto px-4 py-8 md:py-20">
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+        <div className="max-w-4xl mx-auto text-center">
           <div className="space-y-6">
             <h1 className="text-3xl md:text-5xl font-bold text-slate-900 leading-tight">
               <span className="text-blue-600">Dự án Tnex TSA 1-1</span> tạo thu nhập thụ đọng cho ctv
             </h1>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white w-full sm:w-auto">
                 Bắt đầu ngay <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
@@ -149,11 +149,6 @@ export default function Home() {
               >
                 Tìm hiểu thêm
               </Button>
-            </div>
-          </div>
-          <div className="relative">
-            <div className="bg-gradient-to-br from-blue-50 to-slate-100 rounded-2xl p-8 border border-blue-200">
-              <img src="/mobile-app-vay-ti-n-tnex.jpg" alt="Tnex App" className="w-full rounded-xl shadow-lg" />
             </div>
           </div>
         </div>
