@@ -58,7 +58,7 @@ export default function ApplicationPage() {
           </Link>
           <div>
             <h1 className="text-2xl font-bold text-slate-900">Đăng ký hồ sơ vay</h1>
-            <p className="text-sm text-slate-600">Tnex Finance - Vay tiêu dùng nhanh chóng</p>
+            <p className="text-sm text-slate-600">Tnex 1-1 Finance - Vay tiêu dùng nhanh chóng</p>
           </div>
         </div>
       </header>
@@ -181,7 +181,7 @@ export default function ApplicationPage() {
               {/* Terms */}
               <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
                 <p className="text-xs text-slate-600">
-                  ✓ Bằng cách nhấn "Gửi hồ sơ", bạn đồng ý với điều khoản dịch vụ và chính sách bảo mật của Tnex
+                  ✓ Bằng cách nhấn "Gửi hồ sơ", bạn đồng ý với điều khoản dịch vụ và chính sách bảo mật của Tnex 1-1
                   Finance.
                 </p>
               </div>

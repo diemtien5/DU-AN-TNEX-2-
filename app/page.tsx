@@ -125,22 +125,19 @@ export default function Home() {
             <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">T</span>
             </div>
-            <span className="font-bold text-xl text-slate-900">Dự án Tnext TSA 100%</span>
+            <span className="font-bold text-xl text-slate-900">Dự án Tnex TSA 1-1 tạo thu nhập thụ đọng cho ctv</span>
           </div>
           <Button className="bg-blue-600 hover:bg-blue-700 text-white">Đăng ký ngay</Button>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="max-w-6xl mx-auto px-4 py-12 md:py-20">
+      <section className="max-w-6xl mx-auto px-4 py-8 md:py-20">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
-              <span className="text-blue-600">Dự án Tnext TSA 100%</span> - Tuyển dụng Cộng tác viên
+            <h1 className="text-3xl md:text-5xl font-bold text-slate-900 leading-tight">
+              <span className="text-blue-600">Dự án Tnex TSA 1-1</span> tạo thu nhập thụ đọng cho ctv
             </h1>
-            <p className="text-lg text-slate-600 leading-relaxed">
-              Tham gia dự án Tnext TSA 100% - Cơ hội tuyển dụng cộng tác viên với hoa hồng cao 2%. Hướng dẫn đăng ký CTV chi tiết và đơn giản. Bắt đầu kiếm tiền ngay hôm nay!
-            </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white w-full sm:w-auto">
                 Bắt đầu ngay <ArrowRight className="ml-2 w-4 h-4" />
@@ -163,16 +160,16 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-white py-12 md:py-24">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Các điểm mạnh của dự án</h2>
-            <p className="text-lg text-slate-600">Những ưu điểm vượt trội của dự án Tnext TSA 100%</p>
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-4xl font-bold text-slate-900 mb-4">Các điểm mạnh của dự án</h2>
+            <p className="text-lg text-slate-600">Những ưu điểm vượt trội của dự án Tnex TSA 1-1</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
             {/* Feature 1 */}
-            <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8 border border-blue-200 hover:shadow-lg transition-shadow">
+            <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-6 border border-blue-200 hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">💰</span>
               </div>
@@ -183,7 +180,7 @@ export default function Home() {
             </div>
 
             {/* Feature 2 */}
-            <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8 border border-blue-200 hover:shadow-lg transition-shadow">
+            <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-6 border border-blue-200 hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">📲</span>
               </div>
@@ -194,7 +191,7 @@ export default function Home() {
             </div>
 
             {/* Feature 3 */}
-            <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8 border border-blue-200 hover:shadow-lg transition-shadow">
+            <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-6 border border-blue-200 hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">⚡</span>
               </div>
@@ -203,7 +200,7 @@ export default function Home() {
             </div>
 
             {/* Feature 4 */}
-            <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8 border border-blue-200 hover:shadow-lg transition-shadow">
+            <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-6 border border-blue-200 hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">🔒</span>
               </div>
@@ -217,16 +214,16 @@ export default function Home() {
       </section>
 
       {/* How to Register Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-slate-50 to-white">
+      <section className="py-12 md:py-24 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Hướng dẫn đăng ký cộng tác viên</h2>
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-4xl font-bold text-slate-900 mb-4">Hướng dẫn đăng ký cộng tác viên</h2>
             <p className="text-lg text-slate-600">Quy trình đăng ký CTV và hướng dẫn lên hồ sơ cho khách hàng</p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-8">
             {/* Part 1: Registration Guide */}
-            <div className="bg-white rounded-2xl p-8 border border-slate-200">
+            <div className="bg-white rounded-2xl p-6 border border-slate-200">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
                   <span className="text-2xl">📝</span>
@@ -269,7 +266,7 @@ export default function Home() {
             </div>
 
             {/* Part 2: Customer Guide */}
-            <div className="bg-white rounded-2xl p-8 border border-slate-200">
+            <div className="bg-white rounded-2xl p-6 border border-slate-200">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">
                   <span className="text-2xl">👥</span>
@@ -322,11 +319,11 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-700 py-16 md:py-20">
+      <section className="bg-gradient-to-r from-blue-600 to-blue-700 py-12 md:py-20">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Sẵn sàng trở thành CTV?</h2>
+          <h2 className="text-2xl md:text-4xl font-bold text-white mb-4">Sẵn sàng trở thành CTV?</h2>
           <p className="text-lg text-blue-100 mb-8">
-            Đăng ký ngay để tham gia dự án Tnext TSA 100% và bắt đầu kiếm hoa hồng 2%.
+            Đăng ký ngay để tham gia dự án Tnex TSA 1-1 và bắt đầu kiếm hoa hồng 2%.
           </p>
           <Button size="lg" className="bg-white text-blue-600 hover:bg-slate-100">
             Đăng ký CTV ngay <ArrowRight className="ml-2 w-4 h-4" />
@@ -343,7 +340,7 @@ export default function Home() {
                 <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold">T</span>
                 </div>
-                <span className="font-bold text-white">Dự án Tnext TSA 100%</span>
+                <span className="font-bold text-white">Dự án Tnex TSA 1-1</span>
               </div>
               <p className="text-sm">Dự án tuyển dụng cộng tác viên với hoa hồng cao và hỗ trợ chuyên nghiệp.</p>
             </div>
@@ -361,12 +358,12 @@ export default function Home() {
             </div>
             <div>
               <h4 className="font-bold text-white mb-4">Thông tin</h4>
-              <p className="text-sm">Dự án Tnext TSA 100%</p>
+              <p className="text-sm">Dự án Tnex TSA 1-1</p>
               <p className="text-sm mt-2">Tuyển dụng CTV - Hoa hồng 2%</p>
             </div>
           </div>
           <div className="border-t border-slate-700 pt-8 text-center text-sm">
-            <p>&copy; 2025 Dự án Tnext TSA 100%. Tất cả quyền được bảo lưu.</p>
+            <p>&copy; 2025 Dự án Tnex TSA 1-1. Tất cả quyền được bảo lưu.</p>
           </div>
         </div>
       </footer>
