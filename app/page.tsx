@@ -125,7 +125,6 @@ export default function Home() {
             <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">T</span>
             </div>
-            <span className="font-bold text-xl text-slate-900">Dự án Tnex TSA 1-1 tạo thu nhập thụ đọng cho ctv</span>
           </div>
           <Button className="bg-blue-600 hover:bg-blue-700 text-white">Đăng ký ngay</Button>
         </div>
