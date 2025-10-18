@@ -131,10 +131,10 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="max-w-6xl mx-auto px-4 py-8 md:py-20">
+      <section className="max-w-6xl mx-auto px-4 py-6 md:py-20">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="space-y-6">
-            <h1 className="text-3xl md:text-5xl font-bold text-slate-900 leading-tight">
+          <div className="space-y-4">
+            <h1 className="text-2xl md:text-5xl font-bold text-slate-900 leading-tight">
               <span className="text-blue-600">Dự án Tnex TSA 1-1</span>
             </h1>
           </div>
@@ -142,56 +142,56 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="bg-white py-12 md:py-24">
+      <section className="bg-white py-8 md:py-24">
         <div className="max-w-4xl mx-auto px-4">
 
-          <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8 border border-blue-200">
-            <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-6 border border-blue-200">
+            <div className="grid md:grid-cols-2 gap-4">
               {/* Feature 1 */}
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-xl">💰</span>
+              <div className="flex items-start gap-3">
+                <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-lg">💰</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-2">Hoa hồng 2%, trả ngay</h3>
-                  <p className="text-slate-600 text-sm">
+                  <h3 className="text-base font-bold text-slate-900 mb-1">Hoa hồng 2%, trả ngay</h3>
+                  <p className="text-slate-600 text-xs leading-relaxed">
                     Hoa hồng 2%, trả ngay sau khi hồ sơ giải ngân. Thu nhập nhanh chóng và đáng tin cậy.
                   </p>
                 </div>
               </div>
 
               {/* Feature 2 */}
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-xl">📲</span>
+              <div className="flex items-start gap-3">
+                <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-lg">📲</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-2">Theo dõi trực tiếp</h3>
-                  <p className="text-slate-600 text-sm">
+                  <h3 className="text-base font-bold text-slate-900 mb-1">Theo dõi trực tiếp</h3>
+                  <p className="text-slate-600 text-xs leading-relaxed">
                     Theo dõi & push hồ sơ trực tiếp, không qua bên thứ 3. Kiểm soát toàn bộ quy trình.
                   </p>
                 </div>
               </div>
 
               {/* Feature 3 */}
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-xl">⚡</span>
+              <div className="flex items-start gap-3">
+                <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-lg">⚡</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-2">Duyệt nhanh 15 phút</h3>
-                  <p className="text-slate-600 text-sm">Duyệt hồ sơ tự động, chỉ cần CCCD - 15p là có kết quả phê duyệt. Nhanh chóng và tiện lợi.</p>
+                  <h3 className="text-base font-bold text-slate-900 mb-1">Duyệt nhanh 15 phút</h3>
+                  <p className="text-slate-600 text-xs leading-relaxed">Duyệt hồ sơ tự động, chỉ cần CCCD - 15p là có kết quả phê duyệt. Nhanh chóng và tiện lợi.</p>
                 </div>
               </div>
 
               {/* Feature 4 */}
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-xl">🔒</span>
+              <div className="flex items-start gap-3">
+                <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-lg">🔒</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-2">Code nội bộ an toàn</h3>
-                  <p className="text-slate-600 text-sm">
+                  <h3 className="text-base font-bold text-slate-900 mb-1">Code nội bộ an toàn</h3>
+                  <p className="text-slate-600 text-xs leading-relaxed">
                     Chạy code nội bộ, nên không ảnh hưởng đến code chính thống. Nợ xấu cũng mở được code.
                   </p>
                 </div>
@@ -202,27 +202,27 @@ export default function Home() {
       </section>
 
       {/* How to Register Section */}
-      <section className="py-12 md:py-24 bg-gradient-to-b from-slate-50 to-white">
+      <section className="py-8 md:py-24 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-6xl mx-auto px-4">
 
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-2 gap-6">
             {/* Part 1: Registration Guide */}
-            <div className="bg-white rounded-2xl p-6 border border-slate-200">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-                  <span className="text-2xl">📝</span>
+            <div className="bg-white rounded-2xl p-5 border border-slate-200">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                  <span className="text-xl">📝</span>
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900">1. Hướng dẫn đăng ký và theo dõi hồ sơ</h3>
+                <h3 className="text-lg font-bold text-slate-900">1. Hướng dẫn đăng ký và theo dõi hồ sơ</h3>
               </div>
               
-              <div className="space-y-6">
-                <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
-                  <h4 className="font-bold text-slate-900 mb-3 flex items-center gap-2">
+              <div className="space-y-4">
+                <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
+                  <h4 className="font-bold text-slate-900 mb-2 flex items-center gap-2">
                     <span className="text-blue-600">📱</span>
                     Zalo đăng ký chạy và tạo code
                   </h4>
-                  <p className="text-slate-600 mb-3">Liên hệ Zalo để đăng ký làm CTV và nhận mã cộng tác viên:</p>
-                  <div className="bg-white rounded-lg p-4 border border-blue-300">
+                  <p className="text-slate-600 mb-3 text-sm">Liên hệ Zalo để đăng ký làm CTV và nhận mã cộng tác viên:</p>
+                  <div className="bg-white rounded-lg p-3 border border-blue-300">
                     <a 
                       href="https://zalo.me/0888979809" 
                       target="_blank" 
@@ -253,38 +253,38 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="bg-green-50 rounded-lg p-6 border border-green-200">
-                  <h4 className="font-bold text-slate-900 mb-3 flex items-center gap-2">
+                <div className="bg-green-50 rounded-lg p-4 border border-green-200">
+                  <h4 className="font-bold text-slate-900 mb-2 flex items-center gap-2">
                     <span className="text-green-600">👥</span>
                     Group Zalo theo dõi doanh số
                   </h4>
-                  <p className="text-slate-600 mb-3">Tham gia group để theo dõi doanh số và cập nhật thông tin:</p>
-                  <div className="bg-white rounded-lg p-4 border border-green-300">
-                    <p className="text-sm text-slate-500 italic">(Link group sẽ được cập nhật sau)</p>
+                  <p className="text-slate-600 mb-3 text-sm">Tham gia group để theo dõi doanh số và cập nhật thông tin:</p>
+                  <div className="bg-white rounded-lg p-3 border border-green-300">
+                    <p className="text-xs text-slate-500 italic">(Link group sẽ được cập nhật sau)</p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Part 2: Customer Guide */}
-            <div className="bg-white rounded-2xl p-6 border border-slate-200">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">
-                  <span className="text-2xl">👥</span>
+            <div className="bg-white rounded-2xl p-5 border border-slate-200">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center">
+                  <span className="text-xl">👥</span>
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900">2. Hướng dẫn lên hồ sơ cho khách hàng</h3>
+                <h3 className="text-lg font-bold text-slate-900">2. Hướng dẫn lên hồ sơ cho khách hàng</h3>
               </div>
               
-              <div className="space-y-6">
+              <div className="space-y-4">
                 {/* Option A: Copy Link */}
-                <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-lg p-6 border border-blue-200">
-                  <h4 className="font-bold text-slate-900 mb-3 flex items-center gap-2">
+                <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-lg p-4 border border-blue-200">
+                  <h4 className="font-bold text-slate-900 mb-2 flex items-center gap-2">
                     <span className="text-blue-600">🔗</span>
                     A. Gửi link cho khách hàng
                   </h4>
-                  <p className="text-slate-600 mb-4">Copy và gửi link này cho khách hàng để họ đăng ký:</p>
+                  <p className="text-slate-600 mb-3 text-sm">Copy và gửi link này cho khách hàng để họ đăng ký:</p>
                   
-                  <div className="bg-white rounded-lg p-4 border border-slate-300 mb-4">
+                  <div className="bg-white rounded-lg p-3 border border-slate-300 mb-3">
                     <div className="flex items-center justify-between gap-2">
                       <code className="text-sm text-slate-700 flex-1 break-all">
                         https://landing.tnexfinance.com.vn/TnexDirectSale?sale_id=CTV1679
@@ -295,20 +295,20 @@ export default function Home() {
                 </div>
 
                 {/* Option B: QR Code */}
-                <div className="bg-gradient-to-br from-green-50 to-slate-50 rounded-lg p-6 border border-green-200">
-                  <h4 className="font-bold text-slate-900 mb-3 flex items-center gap-2">
+                <div className="bg-gradient-to-br from-green-50 to-slate-50 rounded-lg p-4 border border-green-200">
+                  <h4 className="font-bold text-slate-900 mb-2 flex items-center gap-2">
                     <span className="text-green-600">📱</span>
                     B. Hoặc gửi mã QR cho khách
                   </h4>
-                  <p className="text-slate-600 mb-4">Gửi mã QR này cho khách hàng để họ quét và truy cập trang đăng ký:</p>
+                  <p className="text-slate-600 mb-3 text-sm">Gửi mã QR này cho khách hàng để họ quét và truy cập trang đăng ký:</p>
                   
-                  <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg p-8 border border-green-300 flex flex-col items-center text-white">
-                    <h5 className="text-lg font-bold mb-2">QR tra cứu thông tin</h5>
-                    <p className="text-blue-100 text-sm mb-4">Đưa mã này cho khách hàng</p>
-                    <div className="bg-white rounded-lg p-4 mb-3">
-                      <img src="/qr-code-customer.png" alt="QR Code tra cứu thông tin cho khách hàng" className="w-40 h-40" />
+                  <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg p-6 border border-green-300 flex flex-col items-center text-white">
+                    <h5 className="text-base font-bold mb-1">QR tra cứu thông tin</h5>
+                    <p className="text-blue-100 text-xs mb-3">Đưa mã này cho khách hàng</p>
+                    <div className="bg-white rounded-lg p-3 mb-2">
+                      <img src="/qr-code-customer.png" alt="QR Code tra cứu thông tin cho khách hàng" className="w-32 h-32" />
                     </div>
-                    <p className="text-blue-100 text-xs text-center mb-3">Mã QR tra cứu thông tin dành cho khách hàng</p>
+                    <p className="text-blue-100 text-xs text-center mb-2">Mã QR tra cứu thông tin dành cho khách hàng</p>
                     <p className="text-blue-200 text-xs text-center mb-2">Mã CTV: CTV1679</p>
                     <QRDownloadButton />
                   </div>
@@ -321,37 +321,37 @@ export default function Home() {
 
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-slate-300 py-12">
+      <footer className="bg-slate-900 text-slate-300 py-8">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="grid md:grid-cols-3 gap-6 mb-6">
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold">T</span>
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-6 h-6 bg-blue-600 rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">T</span>
                 </div>
-                <span className="font-bold text-white">Dự án Tnex TSA 1-1</span>
+                <span className="font-bold text-white text-sm">Dự án Tnex TSA 1-1</span>
               </div>
-              <p className="text-sm">Dự án tuyển dụng cộng tác viên với hoa hồng cao và hỗ trợ chuyên nghiệp.</p>
+              <p className="text-xs">Dự án tuyển dụng cộng tác viên với hoa hồng cao và hỗ trợ chuyên nghiệp.</p>
             </div>
             <div>
-              <h4 className="font-bold text-white mb-4">Liên hệ</h4>
+              <h4 className="font-bold text-white mb-3 text-sm">Liên hệ</h4>
               <a 
                 href="https://zalo.me/0888979809" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-sm text-slate-300 hover:text-white transition-colors"
+                className="text-xs text-slate-300 hover:text-white transition-colors"
               >
                 📞 Zalo: 0888 979 809
               </a>
-              <p className="text-sm mt-2">Hỗ trợ 24/7 cho cộng tác viên</p>
+              <p className="text-xs mt-1">Hỗ trợ 24/7 cho cộng tác viên</p>
             </div>
             <div>
-              <h4 className="font-bold text-white mb-4">Thông tin</h4>
-              <p className="text-sm">Dự án Tnex TSA 1-1</p>
-              <p className="text-sm mt-2">Tuyển dụng CTV - Hoa hồng 2%</p>
+              <h4 className="font-bold text-white mb-3 text-sm">Thông tin</h4>
+              <p className="text-xs">Dự án Tnex TSA 1-1</p>
+              <p className="text-xs mt-1">Tuyển dụng CTV - Hoa hồng 2%</p>
             </div>
           </div>
-          <div className="border-t border-slate-700 pt-8 text-center text-sm">
+          <div className="border-t border-slate-700 pt-6 text-center text-xs">
             <p>&copy; 2025 Dự án Tnex TSA 1-1. Tất cả quyền được bảo lưu.</p>
           </div>
         </div>
