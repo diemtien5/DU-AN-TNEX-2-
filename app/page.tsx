@@ -260,7 +260,36 @@ export default function Home() {
                   </h4>
                   <p className="text-slate-600 mb-3 text-sm">Tham gia group để theo dõi dự án kênh số Tnex và cập nhật thông tin:</p>
                   <div className="bg-white rounded-lg p-3 border border-sky-300">
-                    <p className="text-xs text-slate-500 italic">(Link group sẽ được cập nhật sau)</p>
+                    <a 
+                      href="https://zalo.me/g/ybmknm699" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="group relative inline-flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-sky-300 to-sky-400 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 zalo-group-float"
+                    >
+                      {/* Zalo Group Icon */}
+                      <svg 
+                        className="w-6 h-6 text-white relative z-10" 
+                        viewBox="0 0 24 24" 
+                        fill="currentColor"
+                      >
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                      </svg>
+                      
+                      {/* Button Text */}
+                      <span className="text-white font-semibold text-lg relative z-10">Tham gia Group</span>
+                      
+                      {/* Wave Effect Layer 1 */}
+                      <div className="absolute inset-0 rounded-full bg-sky-400 opacity-0 group-hover:opacity-60 group-hover:zalo-wave-1 transition-opacity duration-500"></div>
+                      
+                      {/* Wave Effect Layer 2 */}
+                      <div className="absolute inset-0 rounded-full bg-sky-300 opacity-0 group-hover:opacity-40 group-hover:zalo-wave-2 transition-opacity duration-700"></div>
+                      
+                      {/* Wave Effect Layer 3 */}
+                      <div className="absolute inset-0 rounded-full bg-sky-200 opacity-0 group-hover:opacity-30 group-hover:zalo-wave-3 transition-opacity duration-1000"></div>
+                      
+                      {/* Pulse Effect */}
+                      <div className="absolute inset-0 rounded-full bg-sky-300 opacity-0 group-hover:opacity-50 group-hover:animate-pulse"></div>
+                    </a>
                   </div>
                 </div>
               </div>
