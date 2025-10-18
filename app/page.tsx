@@ -231,7 +231,7 @@ export default function Home() {
                     >
                       {/* Zalo Icon */}
                       <svg 
-                        className="w-6 h-6 text-white" 
+                        className="w-6 h-6 text-white relative z-10" 
                         viewBox="0 0 24 24" 
                         fill="currentColor"
                       >
@@ -239,7 +239,16 @@ export default function Home() {
                       </svg>
                       
                       {/* Phone Number */}
-                      <span className="text-white font-semibold text-lg">0888.979.809</span>
+                      <span className="text-white font-semibold text-lg relative z-10">0888.979.809</span>
+                      
+                      {/* Wave Effect Layer 1 */}
+                      <div className="absolute inset-0 rounded-full bg-blue-400 opacity-0 group-hover:opacity-60 group-hover:zalo-wave-1 transition-opacity duration-500"></div>
+                      
+                      {/* Wave Effect Layer 2 */}
+                      <div className="absolute inset-0 rounded-full bg-blue-300 opacity-0 group-hover:opacity-40 group-hover:zalo-wave-2 transition-opacity duration-700"></div>
+                      
+                      {/* Wave Effect Layer 3 */}
+                      <div className="absolute inset-0 rounded-full bg-blue-200 opacity-0 group-hover:opacity-30 group-hover:zalo-wave-3 transition-opacity duration-1000"></div>
                     </a>
                   </div>
                 </div>
