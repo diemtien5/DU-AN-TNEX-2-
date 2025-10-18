@@ -22,7 +22,7 @@ function CopyLinkButton() {
   return (
     <Button 
       size="sm" 
-      className="bg-blue-600 hover:bg-blue-700 text-white whitespace-nowrap"
+      className="bg-sky-300 hover:bg-sky-400 text-white whitespace-nowrap shadow-md shadow-sky-300/40"
       onClick={handleCopy}
     >
       {copied ? (
@@ -87,7 +87,7 @@ function QRDownloadButton() {
       <Button 
         size="sm" 
         variant="outline"
-        className="bg-white hover:bg-blue-50 border-blue-300 text-blue-600 hover:text-blue-700"
+        className="bg-white hover:bg-sky-50 border-sky-300 text-sky-600 hover:text-sky-700 shadow-md shadow-sky-300/30"
         onClick={handleDownload}
       >
         {downloaded ? (
@@ -105,7 +105,7 @@ function QRDownloadButton() {
       <Button 
         size="sm" 
         variant="outline"
-        className="bg-white hover:bg-green-50 border-green-300 text-green-600 hover:text-green-700"
+        className="bg-white hover:bg-sky-50 border-sky-300 text-sky-600 hover:text-sky-700 shadow-md shadow-sky-300/30"
         onClick={handleShare}
       >
         <Share2 className="w-3 h-3 mr-1" />
@@ -122,11 +122,11 @@ export default function Home() {
       <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">T</span>
+            <div className="w-10 h-10 bg-sky-300 rounded-lg flex items-center justify-center shadow-lg shadow-sky-300/40">
+              <span className="text-white font-bold text-lg drop-shadow-sm">T</span>
             </div>
           </div>
-          <Button className="bg-blue-500 hover:bg-blue-600 text-white">Đăng ký ngay</Button>
+          <Button className="bg-sky-300 hover:bg-sky-400 text-white shadow-lg shadow-sky-300/40">Đăng ký ngay</Button>
         </div>
       </header>
 
@@ -135,7 +135,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="space-y-4">
             <h1 className="text-2xl md:text-5xl font-bold text-slate-900 leading-tight">
-              <span className="text-blue-600">Dự án Tnex TSA 1-1</span>
+              <span className="text-sky-500">Dự án Tnex Kênh số 1-1</span>
             </h1>
           </div>
         </div>
@@ -145,12 +145,12 @@ export default function Home() {
       <section className="bg-white py-8 md:py-24">
         <div className="max-w-4xl mx-auto px-4">
 
-          <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-6 border border-blue-200">
+          <div className="bg-gradient-to-br from-sky-50 to-slate-50 rounded-2xl p-6 border border-sky-200">
             <div className="grid md:grid-cols-2 gap-4">
               {/* Feature 1 */}
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-lg">💰</span>
+                <div className="w-8 h-8 bg-sky-300 rounded-lg flex items-center justify-center flex-shrink-0 shadow-md shadow-sky-300/40">
+                  <span className="text-lg drop-shadow-sm">💰</span>
                 </div>
                 <div>
                   <h3 className="text-base font-bold text-slate-900 mb-1">Hoa hồng 2%, trả ngay</h3>
@@ -162,8 +162,8 @@ export default function Home() {
 
               {/* Feature 2 */}
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-lg">📲</span>
+                <div className="w-8 h-8 bg-sky-300 rounded-lg flex items-center justify-center flex-shrink-0 shadow-md shadow-sky-300/40">
+                  <span className="text-lg drop-shadow-sm">📲</span>
                 </div>
                 <div>
                   <h3 className="text-base font-bold text-slate-900 mb-1">Theo dõi trực tiếp</h3>
@@ -175,8 +175,8 @@ export default function Home() {
 
               {/* Feature 3 */}
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-lg">⚡</span>
+                <div className="w-8 h-8 bg-sky-300 rounded-lg flex items-center justify-center flex-shrink-0 shadow-md shadow-sky-300/40">
+                  <span className="text-lg drop-shadow-sm">⚡</span>
                 </div>
                 <div>
                   <h3 className="text-base font-bold text-slate-900 mb-1">Duyệt nhanh 15 phút</h3>
@@ -186,8 +186,8 @@ export default function Home() {
 
               {/* Feature 4 */}
               <div className="flex items-start gap-3">
-                <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-lg">🔒</span>
+                <div className="w-8 h-8 bg-sky-300 rounded-lg flex items-center justify-center flex-shrink-0 shadow-md shadow-sky-300/40">
+                  <span className="text-lg drop-shadow-sm">🔒</span>
                 </div>
                 <div>
                   <h3 className="text-base font-bold text-slate-900 mb-1">Code nội bộ an toàn</h3>
@@ -209,25 +209,25 @@ export default function Home() {
             {/* Part 1: Registration Guide */}
             <div className="bg-white rounded-2xl p-5 border border-slate-200">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
-                  <span className="text-xl">📝</span>
+                <div className="w-10 h-10 bg-sky-300 rounded-lg flex items-center justify-center shadow-lg shadow-sky-300/40">
+                  <span className="text-xl drop-shadow-sm">📝</span>
                 </div>
                 <h3 className="text-lg font-bold text-slate-900">1. Hướng dẫn đăng ký và theo dõi hồ sơ</h3>
               </div>
               
               <div className="space-y-4">
-                <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
+                <div className="bg-sky-50 rounded-lg p-4 border border-sky-200">
                   <h4 className="font-bold text-slate-900 mb-2 flex items-center gap-2">
-                    <span className="text-blue-600">📱</span>
+                    <span className="text-sky-500">📱</span>
                     Zalo đăng ký chạy và tạo code
                   </h4>
                   <p className="text-slate-600 mb-3 text-sm">Liên hệ Zalo để đăng ký làm CTV và nhận mã cộng tác viên:</p>
-                  <div className="bg-white rounded-lg p-3 border border-blue-300">
+                  <div className="bg-white rounded-lg p-3 border border-sky-300">
                     <a 
                       href="https://zalo.me/0888979809" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="group relative inline-flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 zalo-float"
+                      className="group relative inline-flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-sky-300 to-sky-400 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 zalo-float"
                     >
                       {/* Zalo Icon */}
                       <svg 
@@ -242,24 +242,24 @@ export default function Home() {
                       <span className="text-white font-semibold text-lg relative z-10">0888.979.809</span>
                       
                       {/* Wave Effect Layer 1 */}
-                      <div className="absolute inset-0 rounded-full bg-blue-400 opacity-0 group-hover:opacity-60 group-hover:zalo-wave-1 transition-opacity duration-500"></div>
+                      <div className="absolute inset-0 rounded-full bg-sky-400 opacity-0 group-hover:opacity-60 group-hover:zalo-wave-1 transition-opacity duration-500"></div>
                       
                       {/* Wave Effect Layer 2 */}
-                      <div className="absolute inset-0 rounded-full bg-blue-300 opacity-0 group-hover:opacity-40 group-hover:zalo-wave-2 transition-opacity duration-700"></div>
+                      <div className="absolute inset-0 rounded-full bg-sky-300 opacity-0 group-hover:opacity-40 group-hover:zalo-wave-2 transition-opacity duration-700"></div>
                       
                       {/* Wave Effect Layer 3 */}
-                      <div className="absolute inset-0 rounded-full bg-blue-200 opacity-0 group-hover:opacity-30 group-hover:zalo-wave-3 transition-opacity duration-1000"></div>
+                      <div className="absolute inset-0 rounded-full bg-sky-200 opacity-0 group-hover:opacity-30 group-hover:zalo-wave-3 transition-opacity duration-1000"></div>
                     </a>
                   </div>
                 </div>
 
-                <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
+                <div className="bg-sky-50 rounded-lg p-4 border border-sky-200">
                   <h4 className="font-bold text-slate-900 mb-2 flex items-center gap-2">
-                    <span className="text-blue-600">👥</span>
+                    <span className="text-sky-500">👥</span>
                     Group Zalo theo dõi doanh số
                   </h4>
                   <p className="text-slate-600 mb-3 text-sm">Tham gia group để theo dõi doanh số và cập nhật thông tin:</p>
-                  <div className="bg-white rounded-lg p-3 border border-blue-300">
+                  <div className="bg-white rounded-lg p-3 border border-sky-300">
                     <p className="text-xs text-slate-500 italic">(Link group sẽ được cập nhật sau)</p>
                   </div>
                 </div>
@@ -269,17 +269,17 @@ export default function Home() {
             {/* Part 2: Customer Guide */}
             <div className="bg-white rounded-2xl p-5 border border-slate-200">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center">
-                  <span className="text-xl">👥</span>
+                <div className="w-10 h-10 bg-sky-300 rounded-lg flex items-center justify-center shadow-lg shadow-sky-300/40">
+                  <span className="text-xl drop-shadow-sm">👥</span>
                 </div>
                 <h3 className="text-lg font-bold text-slate-900">2. Hướng dẫn lên hồ sơ cho khách hàng</h3>
               </div>
               
               <div className="space-y-4">
                 {/* Option A: Copy Link */}
-                <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-lg p-4 border border-blue-200">
+                  <div className="bg-gradient-to-br from-sky-50 to-slate-50 rounded-lg p-4 border border-sky-200">
                   <h4 className="font-bold text-slate-900 mb-2 flex items-center gap-2">
-                    <span className="text-blue-600">🔗</span>
+                    <span className="text-sky-500">🔗</span>
                     A. Gửi link cho khách hàng
                   </h4>
                   <p className="text-slate-600 mb-3 text-sm">Copy và gửi link này cho khách hàng để họ đăng ký:</p>
@@ -295,14 +295,14 @@ export default function Home() {
                 </div>
 
                 {/* Option B: QR Code */}
-                <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-lg p-4 border border-blue-200">
+                  <div className="bg-gradient-to-br from-sky-50 to-slate-50 rounded-lg p-4 border border-sky-200">
                   <h4 className="font-bold text-slate-900 mb-2 flex items-center gap-2">
-                    <span className="text-blue-600">📱</span>
+                    <span className="text-sky-500">📱</span>
                     B. Hoặc gửi mã QR cho khách
                   </h4>
                   <p className="text-slate-600 mb-3 text-sm">Gửi mã QR này cho khách hàng để họ quét và truy cập trang đăng ký:</p>
                   
-                  <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg p-6 border border-blue-300 flex flex-col items-center text-white">
+                  <div className="bg-sky-300 rounded-lg p-6 border border-sky-300 flex flex-col items-center text-white shadow-lg shadow-sky-300/40">
                     <h5 className="text-base font-bold mb-1">QR tra cứu thông tin</h5>
                     <p className="text-blue-100 text-xs mb-3">Đưa mã này cho khách hàng</p>
                     <div className="bg-white rounded-lg p-3 mb-2">
@@ -326,12 +326,12 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6 mb-6">
             <div>
               <div className="flex items-center gap-2 mb-3">
-                <div className="w-6 h-6 bg-blue-500 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">T</span>
+                <div className="w-6 h-6 bg-sky-300 rounded-lg flex items-center justify-center shadow-md shadow-sky-300/40">
+                  <span className="text-white font-bold text-sm drop-shadow-sm">T</span>
                 </div>
-                <span className="font-bold text-white text-sm">Dự án Tnex TSA 1-1</span>
+                <span className="font-bold text-white text-sm">Dự án Tnex Kênh số 1-1</span>
               </div>
-              <p className="text-xs">Dự án tuyển dụng cộng tác viên với hoa hồng cao và hỗ trợ chuyên nghiệp.</p>
+              <p className="text-xs">Dự án kênh số Tnex trực tiếp tạo thu nhập ổn định cho ctv tài chính</p>
             </div>
             <div>
               <h4 className="font-bold text-white mb-3 text-sm">Liên hệ</h4>
@@ -347,12 +347,12 @@ export default function Home() {
             </div>
             <div>
               <h4 className="font-bold text-white mb-3 text-sm">Thông tin</h4>
-              <p className="text-xs">Dự án Tnex TSA 1-1</p>
+              <p className="text-xs">Dự án Tnex Kênh số 1-1</p>
               <p className="text-xs mt-1">Tuyển dụng CTV - Hoa hồng 2%</p>
             </div>
           </div>
           <div className="border-t border-slate-700 pt-6 text-center text-xs">
-            <p>&copy; 2025 Dự án Tnex TSA 1-1. Tất cả quyền được bảo lưu.</p>
+            <p>&copy; 2025 Dự án Tnex Kênh số 1-1. Tất cả quyền được bảo lưu.</p>
           </div>
         </div>
       </footer>
