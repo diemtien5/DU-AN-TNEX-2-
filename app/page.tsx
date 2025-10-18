@@ -135,73 +135,71 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="space-y-6">
             <h1 className="text-3xl md:text-5xl font-bold text-slate-900 leading-tight">
-              <span className="text-blue-600">Dự án Tnex TSA 1-1</span> tạo thu nhập thụ đọng cho ctv
+              <span className="text-blue-600">Dự án Tnex TSA 1-1</span>
             </h1>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white w-full sm:w-auto">
-                Bắt đầu ngay <ArrowRight className="ml-2 w-4 h-4" />
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-slate-300 text-slate-700 w-full sm:w-auto bg-transparent"
-              >
-                Tìm hiểu thêm
-              </Button>
-            </div>
           </div>
         </div>
       </section>
 
       {/* Features Section */}
       <section className="bg-white py-12 md:py-24">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-8">
             <h2 className="text-2xl md:text-4xl font-bold text-slate-900 mb-4">Các điểm mạnh của dự án</h2>
             <p className="text-lg text-slate-600">Những ưu điểm vượt trội của dự án Tnex TSA 1-1</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* Feature 1 */}
-            <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-6 border border-blue-200 hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-2xl">💰</span>
+          <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8 border border-blue-200">
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Feature 1 */}
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-xl">💰</span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-slate-900 mb-2">Hoa hồng 2%, trả ngay</h3>
+                  <p className="text-slate-600 text-sm">
+                    Hoa hồng 2%, trả ngay sau khi hồ sơ giải ngân. Thu nhập nhanh chóng và đáng tin cậy.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Hoa hồng 2%, trả ngay</h3>
-              <p className="text-slate-600">
-                Hoa hồng 2%, trả ngay sau khi hồ sơ giải ngân. Thu nhập nhanh chóng và đáng tin cậy.
-              </p>
-            </div>
 
-            {/* Feature 2 */}
-            <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-6 border border-blue-200 hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-2xl">📲</span>
+              {/* Feature 2 */}
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-xl">📲</span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-slate-900 mb-2">Theo dõi trực tiếp</h3>
+                  <p className="text-slate-600 text-sm">
+                    Theo dõi & push hồ sơ trực tiếp, không qua bên thứ 3. Kiểm soát toàn bộ quy trình.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Theo dõi trực tiếp</h3>
-              <p className="text-slate-600">
-                Theo dõi & push hồ sơ trực tiếp, không qua bên thứ 3. Kiểm soát toàn bộ quy trình.
-              </p>
-            </div>
 
-            {/* Feature 3 */}
-            <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-6 border border-blue-200 hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-2xl">⚡</span>
+              {/* Feature 3 */}
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-xl">⚡</span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-slate-900 mb-2">Duyệt nhanh 15 phút</h3>
+                  <p className="text-slate-600 text-sm">Duyệt hồ sơ tự động, chỉ cần CCCD - 15p là có kết quả phê duyệt. Nhanh chóng và tiện lợi.</p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Duyệt nhanh 15 phút</h3>
-              <p className="text-slate-600">Duyệt hồ sơ tự động, chỉ cần CCCD - 15p là có kết quả phê duyệt. Nhanh chóng và tiện lợi.</p>
-            </div>
 
-            {/* Feature 4 */}
-            <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-6 border border-blue-200 hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-2xl">🔒</span>
+              {/* Feature 4 */}
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-xl">🔒</span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-slate-900 mb-2">Code nội bộ an toàn</h3>
+                  <p className="text-slate-600 text-sm">
+                    Chạy code nội bộ, nên không ảnh hưởng đến code chính thống. Nợ xấu cũng mở được code.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Code nội bộ an toàn</h3>
-              <p className="text-slate-600">
-                Chạy code nội bộ, nên không ảnh hưởng đến code chính thống. Nợ xấu cũng mở được code.
-              </p>
             </div>
           </div>
         </div>
@@ -312,18 +310,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-700 py-12 md:py-20">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-4xl font-bold text-white mb-4">Sẵn sàng trở thành CTV?</h2>
-          <p className="text-lg text-blue-100 mb-8">
-            Đăng ký ngay để tham gia dự án Tnex TSA 1-1 và bắt đầu kiếm hoa hồng 2%.
-          </p>
-          <Button size="lg" className="bg-white text-blue-600 hover:bg-slate-100">
-            Đăng ký CTV ngay <ArrowRight className="ml-2 w-4 h-4" />
-          </Button>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="bg-slate-900 text-slate-300 py-12">
