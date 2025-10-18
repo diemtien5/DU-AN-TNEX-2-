@@ -144,10 +144,6 @@ export default function Home() {
       {/* Features Section */}
       <section className="bg-white py-12 md:py-24">
         <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-4xl font-bold text-slate-900 mb-4">Các điểm mạnh của dự án</h2>
-            <p className="text-lg text-slate-600">Những ưu điểm vượt trội của dự án Tnex TSA 1-1</p>
-          </div>
 
           <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8 border border-blue-200">
             <div className="grid md:grid-cols-2 gap-6">
@@ -208,10 +204,6 @@ export default function Home() {
       {/* How to Register Section */}
       <section className="py-12 md:py-24 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-4xl font-bold text-slate-900 mb-4">Hướng dẫn đăng ký cộng tác viên</h2>
-            <p className="text-lg text-slate-600">Quy trình đăng ký CTV và hướng dẫn lên hồ sơ cho khách hàng</p>
-          </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Part 1: Registration Guide */}
@@ -235,11 +227,19 @@ export default function Home() {
                       href="https://zalo.me/0888979809" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-lg font-bold text-blue-600 hover:text-blue-700 transition-colors"
+                      className="group relative inline-flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 zalo-float"
                     >
-                      <span className="text-xl">📞</span>
-                      <span>Zalo: 0888 979 809</span>
-                      <ArrowRight className="w-4 h-4" />
+                      {/* Zalo Icon */}
+                      <svg 
+                        className="w-6 h-6 text-white" 
+                        viewBox="0 0 24 24" 
+                        fill="currentColor"
+                      >
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                      </svg>
+                      
+                      {/* Phone Number */}
+                      <span className="text-white font-semibold text-lg">0888.979.809</span>
                     </a>
                   </div>
                 </div>

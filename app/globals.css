@@ -152,3 +152,20 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Custom animations for Zalo button */
+@keyframes gentle-shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-1px);
+  }
+  75% {
+    transform: translateX(1px);
+  }
+}
+
+.zalo-float {
+  animation: gentle-shake 2s ease-in-out infinite;
+}
