@@ -221,7 +221,7 @@ export default function Home() {
                     <span className="text-sky-500">📱</span>
                     Zalo đăng ký chạy và tạo code
                   </h4>
-                  <p className="text-slate-600 mb-3 text-sm">Liên hệ Zalo để đăng ký làm CTV và nhận mã cộng tác viên:</p>
+                  <p className="text-slate-600 mb-3 text-sm">Liên hệ Zalo để tham gia dự án kênh số Tnex trực tiếp tạo thu nhập ổn định:</p>
                   <div className="bg-white rounded-lg p-3 border border-sky-300">
                     <a 
                       href="https://zalo.me/0888979809" 
@@ -256,9 +256,9 @@ export default function Home() {
                 <div className="bg-sky-50 rounded-lg p-4 border border-sky-200">
                   <h4 className="font-bold text-slate-900 mb-2 flex items-center gap-2">
                     <span className="text-sky-500">👥</span>
-                    Group Zalo theo dõi doanh số
+                    Group Zalo dự án kênh số Tnex
                   </h4>
-                  <p className="text-slate-600 mb-3 text-sm">Tham gia group để theo dõi doanh số và cập nhật thông tin:</p>
+                  <p className="text-slate-600 mb-3 text-sm">Tham gia group để theo dõi dự án kênh số Tnex và cập nhật thông tin:</p>
                   <div className="bg-white rounded-lg p-3 border border-sky-300">
                     <p className="text-xs text-slate-500 italic">(Link group sẽ được cập nhật sau)</p>
                   </div>
@@ -343,12 +343,12 @@ export default function Home() {
               >
                 📞 Zalo: 0888 979 809
               </a>
-              <p className="text-xs mt-1">Hỗ trợ 24/7 cho cộng tác viên</p>
+              <p className="text-xs mt-1">Dự án kênh số Tnex trực tiếp tạo thu nhập ổn định cho ctv tài chính</p>
             </div>
             <div>
               <h4 className="font-bold text-white mb-3 text-sm">Thông tin</h4>
               <p className="text-xs">Dự án Tnex Kênh số 1-1</p>
-              <p className="text-xs mt-1">Tuyển dụng CTV - Hoa hồng 2%</p>
+              <p className="text-xs mt-1">Dự án kênh số Tnex trực tiếp tạo thu nhập ổn định cho ctv tài chính</p>
             </div>
           </div>
           <div className="border-t border-slate-700 pt-6 text-center text-xs">
